@@ -36,7 +36,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <!-- <img src="assets/img/logo.png" alt=""> -->
         <span>מסמכולוג</span>
       </a>
 
@@ -98,15 +98,15 @@
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  משהו רלוונטי
                 </p>
                 <div class="profile mt-auto">
                   <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
+                  <h3>מישהו רגיל</h3>
+                  <h4>בעל דירה</h4>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -114,12 +114,12 @@
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  משהו רלוונטי
                 </p>
                 <div class="profile mt-auto">
                   <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
+                  <h3>מישהי רגילה</h3>
+                  <h4>שוכרת</h4>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -158,7 +158,7 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form">
+            <form id="contactform" class="1php-email-form">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -178,11 +178,9 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">טוען</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">הודעתך נשלחה, תודה!</div>
-
-                  <button type="submit">שלח</button>
+                  <div id="new-contact-message-submit-message" class="d-none">הודעתך נשלחה, תודה!</div>
+                  <div id="new-contact-message-submit-error" class="d-none">בדקו טוב את הטופס, משהו השתבש</div>
+                  <input type="submit" value="שלח"></input>
                 </div>
 
               </div>
@@ -208,15 +206,19 @@
             <img src="assets/img/features.png" class="img-fluid" alt="">
           </div>
 				
-		  <div class="col-lg-6 email">
-        <h2>להרשמה וקבלת קישור לעריכת חוזה דירה בהתאמה אישית השאירו כתובת מייל</h2> 
-			<form action="" method="post" class="email">
-			  <input type="email" name="email" placeholder="לדוגמה avicohen@gmail.com" required><input type="submit" value="שלח">
-			</form>
-      לא נשתף פרטים ולא נשלח דואר זבל
-		  </div>
+          <div class="col-lg-6 email">
+            <h2>להרשמה וקבלת קישור לעריכת חוזה דירה בהתאמה אישית השאירו כתובת מייל</h2> 
+            <form class="email" id="emailform">
+              <input id="emailformfield" type="email" name="email" placeholder="לדוגמה avicohen@gmail.com" required><input type="submit" value="שלח">
+            </form>
+            
+            <div id="new-email-submit-message" >הכתובת נקלטה, תודה!</div>
+            <div id="new-email-submit-error" >בדקו טוב את האימייל, משהו השתבש</div>
 
-        </div> <!-- / row -->
+            לא נשתף פרטים ולא נשלח דואר זבל
+          </div>
+
+        </div> 
 
 
       </div>
@@ -253,9 +255,11 @@
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/jquery/js/jquery-3.6.0.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/forms.js"></script>
 
 </body>
 
