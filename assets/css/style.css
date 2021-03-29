@@ -444,7 +444,7 @@ section {
 .hero .btn-get-started {
   margin-top: 30px;
   line-height: 0;
-  padding: 15px 40px;
+  padding: 15px 30px;
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
@@ -457,6 +457,7 @@ section {
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
+  margin-left: 8px;
 }
 
 .hero .btn-get-started i {

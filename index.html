@@ -15,7 +15,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -58,19 +60,20 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
+        <div class="col-lg-5 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up">מסמכים פשוטים ומהירים בהתאמה אישית</h1>
           <h2 data-aos="fade-up" data-aos-delay="400">יצירת חוזה שכירות בדרך שעוד לא הכרתם</h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
-              <a href="#start" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                <i class="bi bi-arrow-right"></i>
+              <a href="#start"
+                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>התחילו עכשיו</span>
+                <i class="bi bi-arrow-left"></i>
               </a>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+        <div class="col-lg-7 text-center hero-img" data-aos="zoom-out" data-aos-delay="200">
           <img src="assets/img/hero-img.png" class="img-fluid" alt="">
         </div>
       </div>
@@ -95,7 +98,8 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   משהו רלוונטי
@@ -111,7 +115,8 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   משהו רלוונטי
@@ -132,6 +137,41 @@
 
     </section><!-- End Testimonials Section -->
 
+
+    <section id="start" class="start">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>התחילו עכשיו</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <img src="assets/img/features.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 email">
+            <h2>להרשמה וקבלת קישור לעריכת חוזה דירה בהתאמה אישית השאירו כתובת מייל</h2>
+            <form class="email" id="emailform">
+              <input id="emailformfield" type="email" name="email" placeholder="לדוגמה avicohen@gmail.com"
+                required><input type="submit" value="שלח">
+            </form>
+
+            <div id="new-email-submit-message">הכתובת נקלטה, תודה!</div>
+            <div id="new-email-submit-error">בדקו טוב את האימייל, משהו השתבש</div>
+
+            לא נשתף פרטים ולא נשלח דואר זבל
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
 
@@ -143,21 +183,19 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-6">
+          <div class="col-lg-4">
 
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-envelope"></i>
-                  <h3>כתבו לנו</h3>
-                  <p>simplerdocuments@gmail.com</p>
-                </div>
-              </div>
+            <div class="info-box">
+              <i class="bi bi-envelope"></i>
+              <h3>כתבו לנו</h3>
+              <p style="font-size: large;">
+                <a href="mailto: simplerdocuments@gmail.com"> SimplerDocuments@gmail.com</a>
+              </p>
             </div>
 
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-8">
             <form id="contactform" class="1php-email-form">
               <div class="row gy-4">
 
@@ -191,40 +229,6 @@
       </div>
     </section><!-- End Contact Section -->
 
-    
-    <section id="start" class="start">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <p>התחילו עכשיו</p>
-        </header>
-
-        <div class="row">
-
-          <div class="col-lg-6">
-            <img src="assets/img/features.png" class="img-fluid" alt="">
-          </div>
-				
-          <div class="col-lg-6 email">
-            <h2>להרשמה וקבלת קישור לעריכת חוזה דירה בהתאמה אישית השאירו כתובת מייל</h2> 
-            <form class="email" id="emailform">
-              <input id="emailformfield" type="email" name="email" placeholder="לדוגמה avicohen@gmail.com" required><input type="submit" value="שלח">
-            </form>
-            
-            <div id="new-email-submit-message" >הכתובת נקלטה, תודה!</div>
-            <div id="new-email-submit-error" >בדקו טוב את האימייל, משהו השתבש</div>
-
-            לא נשתף פרטים ולא נשלח דואר זבל
-          </div>
-
-        </div> 
-
-
-      </div>
-
-    </section>
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -245,7 +249,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
